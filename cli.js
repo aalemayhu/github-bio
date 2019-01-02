@@ -76,6 +76,6 @@ octokit.authenticate({
 
 octokit.users.updateAuthenticated({ bio: newBioText }).then(result => {
   console.log(
-    result.status === 200 ? `✅  bio: ${newBioText}` : `${result} 🔴`
+    result.status === 200 ? `bio: ${chalk.green(newBioText)}` : `${result}`
   );
 });
