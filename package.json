@@ -4,11 +4,15 @@
   "description": "update your GitHub bio from the CLI",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "mocha test",
+    "lint": "eslint --fix *.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/scanf/github-bio.git"
+  },
+  "bin": {
+    "github-bio": "cli.js"
   },
   "keywords": [
     "github",
@@ -24,6 +28,10 @@
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "cac": "^6.3.12"
+    "@octokit/rest": "^16.3.0",
+    "cac": "^6.3.12",
+    "chalk": "^2.4.1",
+    "prompt-sync": "^4.1.6",
+    "xo": "^0.23.0"
   }
 }
