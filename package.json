@@ -1,6 +1,6 @@
 {
   "name": "@scanf/github-bio",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "update your GitHub bio from the CLI",
   "main": "index.js",
   "scripts": {
