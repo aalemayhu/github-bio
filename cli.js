@@ -5,13 +5,15 @@ const fs = require("fs");
 const os = require("os");
 
 const octokit = require("@octokit/rest")();
-const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")({ sigint: true });
 const chalk = require("chalk");
 const cli = require("cac")();
 const version = require("./package.json").version;
 
 const home = os.homedir();
 const configPath = path.join(home, ".github-bio");
+
+process.on("SIGINT", () => process.exit(0));
 
 const loadConfig = function() {
   const badToken = { token: undefined };
