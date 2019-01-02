@@ -33,7 +33,7 @@ const saveConfig = function(token) {
   fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
 };
 
-cli.option("--new <bio>", "Update your bio on GitHub", { default: undefined });
+cli.option("--bio <bio>", "Update your bio on GitHub", { default: undefined });
 
 cli.version(version);
 cli.help();
