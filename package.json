@@ -25,13 +25,13 @@
   },
   "homepage": "https://github.com/scanf/github-bio#readme",
   "devDependencies": {
+    "eslint": "^5.11.1",
     "mocha": "^5.2.0"
   },
   "dependencies": {
     "@octokit/rest": "^16.3.0",
     "cac": "^6.3.12",
     "chalk": "^2.4.1",
-    "prompt-sync": "^4.1.6",
-    "xo": "^0.23.0"
+    "prompt-sync": "^4.1.6"
   }
 }
