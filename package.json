@@ -1,0 +1,29 @@
+{
+  "name": "@scanf/github-bio",
+  "version": "0.0.0",
+  "description": "update your GitHub bio from the CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scanf/github-bio.git"
+  },
+  "keywords": [
+    "github",
+    "bio"
+  ],
+  "author": "Alexander Alemayhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/scanf/github-bio/issues"
+  },
+  "homepage": "https://github.com/scanf/github-bio#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "cac": "^6.3.12"
+  }
+}
